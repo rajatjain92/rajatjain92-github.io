@@ -32,7 +32,7 @@ images:
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The other component of the network determines if the image contains an object that is centered and at an appropriate scale. Putting the output of VGG-like layers through a 2x2 maxpool, a dropout unit, and two fully connected layers, we&rsquo;re able to obtain our &ldquo;objectness&rdquo; score.</p>
 <p><span style="text-decoration: underline;">Training</span></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Both components of the network are trained simultaneously as the loss function is a sum of logistic regression losses (one for the objectness head and one for every location in the segmentation head).&nbsp; Backpropagation alternates between going through the segmentation head and the objectness head. Data augmentation techniques were used to improve the model.&nbsp; The model was trained with stochastic gradient descent on an Nvidia Tesla K40m GPU for around 5 days.</p>
-<p><span style="text-decoration: underline;">Why This Paper is Cool</span> </p>
+<p><span style="text-decoration: underline;">Why This Paper is Cool</span></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A single convolutional neural network. We didn&rsquo;t need an extra object proposal step or some complex training pipeline. There is a certain simplicity to this model which helps the network&rsquo;s flexibility as well as its efficiency and speed.</p>
 <h2><span style="text-decoration: underline;"><strong><a href="https://arxiv.org/pdf/1603.08695v2.pdf">SharpMask</a></strong></span></h2>
 <p><span style="text-decoration: underline;">Introduction</span></p>
