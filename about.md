@@ -24,4 +24,4 @@ I am a final year student of post graduation in IIIT Hyderabad
 
 ### Contact me
 
-[adeshpande3@ucla.edu](mailto:adeshpande3@ucla.edu)
+rajatjain0807@gmail.com
