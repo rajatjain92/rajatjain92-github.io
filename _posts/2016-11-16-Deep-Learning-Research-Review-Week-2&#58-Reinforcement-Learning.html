@@ -7,7 +7,47 @@ images:
 ---
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <img src="/assets/Cover6th.png">
-<p><em>This is the 2<sup>nd</sup> installment of a new series called Deep Learning Research Review. Every couple weeks or so, I&rsquo;ll be summarizing and explaining research papers in specific subfields of deep learning. This week focuses on Reinforcement Learning. </em><a href="https://adeshpande3.github.io/adeshpande3.github.io/Deep-Learning-Research-Review-Week-1-Generative-Adversarial-Nets"  target="_blank"><em>Last time</em></a><em> was Generative Adversarial Networks ICYMI</em></p>
+
+<pre> Supervised Learning
+
+Supervised Learning is where the agent is given matching pairs of data and conclusions, and is trying to learn a rule to fit the two. It uses concept learning and can use decision trees in ML or artificial neural networks.
+
+Problems
+
+Framework (decision tree, artificial neural networks, SVM, etc)
+Representation (of inputs and outputs)
+Pre-processing / post-processing
+Training method (perceptron learning, backpropagation, etc.)
+Generalisation (avoid over-ﬁtting)
+Evaluation (separate training and testing sets)
+Unsupervised Learning
+
+Unsupervised Learning is where the agent is given data without any hints and told to find patterns (find attributes which can be grouped together in characteristic "patterns"). It uses clustering and association rule learning in ML to do so.
+
+Reinforcement Learning
+
+Reinforcement Learning is where the agent is not presented with target outputs, but is given a reward signal, which it aims to maximize.
+
+Read more about reinforcement learning
+
+Comparison
+
+Supervised Learning is Direct Feedback (through lots of examples)
+Reinforced Learning is Indirect Feedback (after many examples)
+Unsupervised Learning is No Feedback
+Direct Experience vs Indirect Experience
+
+Direct Experience is where each play-out has been done by the agent itself, rather than the knowledge being received secondhand (i.e. from a database). Hence playing out a series of moves and realising they equate to a loss is direct.
+Indirect Experience is the opposite - e.g. noting that a move leads to a loss based on data provided.
+Active Learning vs Passive Learning
+
+(I.e. is it the teacher or not?)
+
+Active learning is where the Agent is the Teacher - it is choosing the test data that it feels relevant, rather than following provided data.
+Passive learning is the opposite, 
+  it is being given test data and working through them to build up its knowledge database, 
+  but not working out which data will be most useful itself.</pre>
+
 <h2><strong>Introduction to Reinforcement Learning</strong></h2>
 <p><span style="text-decoration: underline;">3 Categories of Machine Learning</span></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before getting into the papers, let&rsquo;s first talk about what <strong>reinforcement learning</strong> is. The field of machine learning can be separated into 3 main categories.</p>
